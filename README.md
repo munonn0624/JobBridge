@@ -1,57 +1,50 @@
-# JobBridge Job Board – Project Setup Guide
+# 💼 JobBridge – Job Board
 
-## Contributors
+JobBridge is a job board platform developed as a **university group assignment project**. This project was created as part of our academic coursework, providing an opportunity to collaborate and apply our web development skills in building a job platform.
 
-* Huang Wan Jun
-* Lee Mun Onn
-* Shia Kah Yee
-* Yu Xiao Shi
+## 👥 Contributors
+
+- Huang Wan Jun
+- Lee Mun Onn
+- Shia Kah Yee
+- Yu Xiao Shi
 
 ---
 
-## Before Running the Project
+## ⚙️ Project Setup Guide
 
-Please complete the following steps before running the project:
+Follow the steps below to set up and run the project locally.
 
 ### 1. Install Dependencies
 
-Install all required backend and frontend dependencies:
+Install the required backend and frontend dependencies:
 
 ```bash
 npm install
-```
-
-```bash
 composer install
 ```
 
----
-
 ### 2. Environment Configuration
 
-Set up your environment file:
+Create your environment file:
 
 ```bash
 cp .env.example .env
 ```
 
-Then update the `.env` file with the appropriate configuration for your system.
+Update the `.env` file with the appropriate configuration for your local environment.
 
----
+### 3. Broadcast Configuration
 
-### 3. Broadcast Configuration (Important)
+Add the following configuration to your `.env` file to enable broadcasting:
 
-Add the following configuration to your `.env` file to enable broadcasting (as a fallback if needed):
-
-```
+```env
 BROADCAST_DRIVER=pusher
 PUSHER_APP_ID="2130607"
-PUSHER_APP_KEY="b3bd2c9574b4a72310ec"
-PUSHER_APP_SECRET="f4d21b8aac01c3647a99"
+PUSHER_APP_KEY="YOUR_PUSHER_APP_KEY"
+PUSHER_APP_SECRET="YOUR_PUSHER_APP_SECRET"
 PUSHER_APP_CLUSTER="ap1"
 ```
-
----
 
 ### 4. Generate Application Key
 
@@ -59,25 +52,28 @@ PUSHER_APP_CLUSTER="ap1"
 php artisan key:generate
 ```
 
----
-
 ### 5. Run the Project
 
-Start the development servers:
+Start the frontend development server:
 
 ```bash
 npm run dev
 ```
 
+In another terminal, start the Laravel development server:
+
 ```bash
 php artisan serve
 ```
 
+The application will be available at:
+
+```text
+http://127.0.0.1:8000
+```
+
 ---
 
-## Presentation Video
-
-Here is the link to our presentation video:
-https://drive.google.com/file/d/1SMaCPk3PtJW2FYhT2yAWZv7JEy2x4RW5/view?usp=drive_link
-
----
+<p align="center">
+  Developed as a university group assignment. 💻
+</p>
