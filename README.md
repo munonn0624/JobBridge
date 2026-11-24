@@ -10,6 +10,22 @@ JobBridge is a job board platform developed as a **university group assignment p
 - Yu Xiao Shi
 
 ---
+## 📸 Screenshots
+
+### Homepage
+![Homepage](screenshots/homepage.png)
+
+### Job Listings
+![Job Listings](screenshots/job-listings.png)
+
+### Job Details
+![Job Details](screenshots/job-details.png)
+
+### Login Page
+![Login](screenshots/login.png)
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
 
 ## ⚙️ Project Setup Guide
 
